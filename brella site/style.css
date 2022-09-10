@@ -415,6 +415,30 @@ html{
     max-width: 1440px;
     margin: 0 auto;
 }
+.header_burger {
+    display: none;
+    width: 71.25px;
+    height: 32px;
+    position: relative;
+}
+.burger_line {
+    display: block;
+    width: 26.25px;
+    height: 2.67px;
+    background-color: #214E41;
+    position: absolute;
+    left: 0;
+    border-radius: 2px;
+}
+.burger_line_first {
+    top: 8px;
+}
+.burger_line_second {
+    top: 14.67px;
+}
+.burger_line_third {
+    bottom: 8px;
+}
 .logo{
     padding-top: 33px;
     padding-left: 45px;
@@ -467,22 +491,24 @@ html{
 }
 .wrapper{
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 .intro{
     height: 720px;
-    background: url(./img/Rectangle.png);
-    background-size: cover;
+    background: url(./img/Rectangle.png) no-repeat;
+    background-size: contain;
 }
 .plan{
-    width: 516px;
-    padding-top: 161px;
+    max-width: 516px;
+    width: 100%;
+    padding-top: 11vw;
 }
 .plan_title{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 2.5vw;
     line-height: 46px;
     color: #214E41;
 }
@@ -498,7 +524,7 @@ html{
 }
 
 .plan_input{
-    width: 260px;
+    width: 20.71vw;
     height: 60px;
     padding: 0;
     border: 0;
@@ -514,7 +540,7 @@ html{
     color: #222222;
 }
 .plan_submit{
-    width: 123px;
+    width: 11.43vw;
     height: 60px;
     border: none;
     background: #43806C;
@@ -527,17 +553,17 @@ html{
     color: #FFFFFF;
 }
 .more_info_wrapper{
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     height: 171px;
     position: absolute;
-    top: 715px;
+    top: 49.5vw;
     background: #FFFFFF;
     box-shadow: 1px 1px 4px rgba(232, 230, 230, 0.6);
     border-radius: 6px;
 }
 .more_info_cards{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
     align-items: center;
     padding-top: 50px;
     padding-left: 50px;
@@ -572,15 +598,14 @@ html{
 }
 .why_brella{
     margin-top: 176px;
-    height: 432px;
 }
 .why_brella_wrapper{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
 }
 .today{
-    width: 610px;
+    width: 510px;
     padding-left: 60px;
     margin-right: 90px;
 }
@@ -715,6 +740,7 @@ html{
     text-align: right;
     color: #757575;
     padding-right: 69px;
+    padding-bottom: 120px;
 }
 .brella_brings{
     height: 640px;
@@ -837,12 +863,16 @@ html{
 }
 .claims{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
 }
 .claims_card:first-child{
     padding-right: 263px;
     padding-left: 115px;
+}
+.claims_card:last-child{
+    max-width: 495px;
+    width: 100%;
 }
 .claims_img{
     width: 296px;
@@ -897,8 +927,8 @@ html{
 }
 .for_exployers{
     height: 522px;
-    background: url(./img/for_exployer.png);
-    background-size: cover;
+    background: url(./img/for_exployer.png) no-repeat;
+    background-size: contain;
 }
 .for_exployer_wrapper{
     width: 500px;
@@ -980,7 +1010,8 @@ html{
     padding-right: 40px;
 }
 .proudly_line{
-    width: 1350px;
+    max-width: 1350px;
+    width: 100%;
     height: 1px;
     background: rgba(199, 199, 199, 0.37);
     margin: 0 auto;
@@ -988,7 +1019,7 @@ html{
 }
 .proudly_cards{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: flex-start;
     margin-bottom: 120px;
 }
@@ -1019,6 +1050,7 @@ html{
 .ready{
     background: #E3EEED;
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 .ready_wrapper{
@@ -1029,8 +1061,15 @@ html{
 .ready_foto{
     margin-right: 120px;
 }
+.ready_foto_img{
+    max-width: 720px;
+    width: 100%;
+}
+.ready_block{
+    max-width: 423px;
+    width: 100%;
+}
 .ready_title{
-    width: 423px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -1138,7 +1177,7 @@ html{
     padding-right: 25px;
 }
 .footer_line{
-    width: 1200px;
+    max-width: 1200px;
     height: 1px;
     background: #FFFFFF;
     margin-top: 71px;
@@ -1165,3 +1204,412 @@ html{
     padding-bottom: 30px;
 }
 
+@media screen and (max-width: 1200px) {
+        .why_brella{
+            margin-top: 0px;
+        }
+        .today{
+            width: 410px;
+            padding-left: 0;
+            margin-right: 0;
+        }
+        .for_exployer_wrapper{
+            padding-top: 50px;
+        }
+        .proudly_title{
+            padding-top: 0px;
+        }
+        .ready_foto_img{
+            max-width: 432px;
+        }
+        .claims_card:first-child{
+            padding-right: 163px;
+            padding-left: 0px;
+        }
+        .claims_card:last-child{
+            max-width: 395px;
+        }
+        .one_plan_cards{
+            padding-top: 20px;
+        }
+        .brella_brings_wrapper{
+            padding-top: 20px;
+        }
+        .ready_foto{
+            margin-right: 0px;
+        }
+        .proudly_cards{
+            margin-bottom: 20px;
+        }
+        .proudly_line{
+            margin-bottom: 20px;
+        }
+        .header_list_wrapper{
+            display: none;
+        }
+        .header_burger {
+            display: block;
+        }
+        .header_wrapper{
+            align-items: end;
+        }
+        .source{
+            text-align: center;
+        }
+}
+@media screen and (max-width: 945px) {
+        .procent{
+            display: none;
+        }
+        .more_info{
+            display: none;
+        }
+        .intro{
+            height: 520px;
+        }
+        .plan{
+            padding-left: 45px;
+        }
+        .why_brella{
+            padding-left: 45px;
+        }
+        .today{
+            width: 610px;
+        }
+        .source{
+            padding-bottom: 60px;
+        }
+        .brella_brings{
+            background: #E3EEED;
+            height: 440px;
+        }
+        .benefits_description{
+            display: none;
+        }
+        .benefits{
+            padding-left: 45px;
+        }
+        .claims_card:first-child{
+            padding-left: 45px;
+            padding-right: 63px;
+        }
+        .for_exployer_wrapper{
+            padding-top: 20px;
+            padding-left: 45px;
+        }
+        .for_exployers{
+            height: 377px;
+        }
+        .one_plan_card:first-child{
+            display: none;
+        }
+        .one_plan_card:last-child{
+            margin: 0 auto;
+        }
+        .coverage_cards{
+            padding-bottom: 60px;
+        }
+}
+@media screen and (max-width:854px) {
+        .ready_title{
+            font-size: 24px;
+            padding-bottom: 20px;
+        }
+        .ready_block{
+            max-width: 233px;
+        }
+}
+@media screen and (max-width: 799px) {
+        .plan{
+            max-width: 316px;
+        }
+        .plan_title{
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .plan_text{
+            font-size: 12px;
+            margin-top: 30px;
+        }
+        .plan_input::placeholder{
+            font-size: 10px;
+        }
+        .plan_submit{
+            font-size: 10px;
+        }
+        .intro{
+            height: 420px;
+        }
+        .why_brella_title{
+            font-size: 10px;
+        }
+        .why_brella_title2{
+            font-size: 18px;
+            padding-bottom: 24px;
+            line-height: 24px;
+        }
+        .why_brella_text{
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .today{
+            width: 360px;
+            padding-bottom: 30px;
+        }
+        .why_brella_button{
+            font-size: 12px;
+        }
+        .source{
+            display: none;
+        }
+        .brella_brings_title{
+            font-size: 10px;
+        }
+        .ben_item_link{
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 700;
+        }
+        .benefits_item{
+            padding-bottom: 9px;
+        }
+        .brella_brings{
+            height: 260px;
+        }
+        .coverage_card{
+            padding-right: 33px;
+        }
+        .one_plan_cards{
+            padding-bottom: 20px;
+        }
+        .coverage_card_title{
+            font-size: 30px;
+            line-height: 39px;
+        }
+        .coverage_card_text{
+            font-size: 10px;
+            line-height: 12px;
+        }
+        .claims_img{
+            width: 148px;
+            height: 250px;
+        }
+        .claims_title{
+            font-size: 10px;
+            line-height: 0px;
+        }
+        .claims_card_title{
+            font-size: 18px;
+            line-height: 23px;
+        }
+        .claims_card_text{
+            font-size: 12px;
+            line-height: 15px;
+        }
+        .claims_button{
+            font-size: 12px;
+        }
+        .claims_card:last-child{
+            max-width: 320px;
+        }
+        .for_exployer_title{
+            font-size: 10px;
+            line-height: 0px;
+        }
+        .easy_title{
+            max-width: 270px;
+            font-size: 18px;
+            line-height: 23px;
+        }
+        .for_exployer_text{
+            font-size: 12px;
+            line-height: 15px;
+        }
+        .for_expl_button{
+            font-size: 12px;
+        }
+        .for_exployer_wrapper{
+            max-width: 270px ;
+        }
+        .for_exployers{
+            height: 307px;
+        }
+        .proudly_title{
+            font-size: 18px;
+            padding-bottom: 55px;
+        }
+        .proudly_slider{
+            padding-bottom: 60px;
+        }
+        .proudly_cards{
+            display: block;
+            text-align: center;
+        }
+        .proudly_card{
+            padding-left: 0px;
+            margin: 0 auto;
+        }
+        .pr_card_title{
+            font-size: 18px;
+        }
+        .footer_list{
+            padding-left: 30px;
+        }
+        .footer_texts{
+            display: none;
+        }
+        .footer_wrapper{
+            padding-top: 50px;
+        }
+        .footer_item{
+            font-size: 12px;
+            line-height: 13px;
+        }
+        .footer_login_title{
+            font-size: 10px;
+            line-height: 12px;
+            padding-bottom: 10px;
+        }
+        .footer_login_text{
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .footer_input{
+            width: 152px;
+        }
+        .footer_login{
+            width: 250px;
+        }
+        .footer_text{
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .footer_line{
+            margin-top: 35px;
+        }
+        .footer_the_end{
+            padding-top: 35px;
+            padding-bottom: 15px;
+        }
+        .benefits_list{
+            width: 405px;
+        }
+}
+@media screen and (max-width: 664px) {
+        .ready_foto_img{
+            max-width: 332px;
+        }
+        .ready_title{
+            font-size: 18px;
+            line-height: 23px;
+        }
+        .ready_button{
+            margin-top: 0px;
+        }
+}
+@media screen and (max-width: 575px) {
+        .claims_card:first-child{
+            padding-right: 0px;
+        }
+}
+@media screen and (max-width: 564px) {
+        .header{
+            height: 0px;
+        }
+        .plan_title{
+            display: none;
+        }
+        .plan_text{
+            display: none;
+        }
+        .plan_form{
+            padding-top: 90px;
+        }
+        .plan_input{
+            height: 30px;
+            width: 23vw;
+        }
+        .plan_submit{
+            height: 30px;
+            font-size: 8px;
+        }
+        .plan_input::placeholder{
+            font-size: 8px;
+        }
+        .intro{
+            height: 300px;
+        }
+        .one_plan_img{
+            width: 280px;
+            height: 149px;
+        }
+        .easy_title{
+            display: none;
+        }
+        .for_exployer_text{
+            display: none;
+        }
+        .for_expl_button{
+            margin-top: 60px;
+        }
+        .for_exployers{
+            height: 207px;
+        }
+        .proudly_slide{
+            width: 73px;
+            height: 30px;
+            padding-right: 20px;
+        }
+        .proudly_slide:first-child{
+            width: 25px;
+            height: 19px;
+            padding-right: 10px;
+        }
+        .proudly_slide:last-child{
+            width: 25px;
+            height: 19px;
+        }
+        .proudly_slide:nth-last-child(2){
+            padding-right: 10px;
+        }
+        .ready_foto_img{
+            max-width: 232px;
+        }
+}
+@media screen and (max-width:520px) {
+        .footer_list{
+            display: none;
+        }
+        .footer_login_title{
+            display: none;
+        }
+        .footer_login_text{
+            display: none;
+        }
+        .footer_input{
+            display: none;
+        }
+        .footer_submit{
+            display: none;
+        }
+        .footer_icons{
+            padding-top: 0px;
+        }
+        .footer_login{
+            width: 160px;
+        }
+}
+@media screen and (max-width:512px) {
+        .claims_card:first-child{
+            padding-left: 0px;
+        }
+        .claims_card:last-child{
+            max-width: 250px;
+        }
+        .ready_block{
+            max-width: 183px;
+        }
+        .benefits_list{
+            width: 305px;
+        }
+}
