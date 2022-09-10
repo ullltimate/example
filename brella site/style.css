@@ -1613,3 +1613,20 @@ html{
             width: 305px;
         }
 }
+@media screen and (max-width:414px) {
+        .ready_foto_img{
+            max-width: 152px;
+        }
+        .ready_title{
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .ready_button{
+            width: 75px;
+            height: 37px;
+            font-size: 10px;
+        }
+        .ready_block{
+            max-width: 153px;
+        }
+}
