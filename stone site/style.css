@@ -476,6 +476,9 @@ textarea {
   .link_soc_item:hover, .link_soc_item:active, .link_soc_item:focus{
     background-color: #000;
   }
+  .header_burger{
+    display: none;
+  }
   .intro{
     height: 490px;
     background: url(./img/intro.png);
@@ -742,4 +745,115 @@ textarea {
 .footer_button:hover, .footer_button:active, .footer_button:focus{
     cursor: pointer;
     opacity: 50%;
+}
+@media screen and (max-width:750px) {
+    .the_team_img{
+      max-width: 154px;
+      max-height: 222px; 
+    }
+}
+@media screen and (max-width:656px) {
+    .footer_button{
+      width: 200px;
+    }
+}
+@media screen and (max-width:620px) {
+    .link_soc_networks{
+      display: none;
+    }
+    .intro_title{
+      font-size: 48px;
+      line-height: 46px;
+      padding-top: 97px;
+    }
+    .intro_line{
+      margin-top: 12px;
+    }
+    .intro_text{
+      font-size: 14px;
+      line-height: 20px;
+      padding-top: 8px;  
+    }
+    .intro_button{
+      margin-top: 24px;
+    }
+    .intro_slider{
+      padding-top: 36px;
+    }
+    .steps_cards{
+      padding-top: 52px;
+    }
+    .steps{
+      height: 350px;
+    }
+    .intro{
+      height: 390px;
+    }
+    .desing_title{
+      font-size: 36px;
+      line-height: 46px;
+    }  
+}
+@media screen and (max-width: 557px) {
+    .footer_text{
+      font-size: 10px;
+    }
+    .footer_but_text{
+      font-size: 12px;
+    }
+    .footer_button{
+      width: 140px;
+      height: 30px;
+    }
+}
+@media screen and (max-width:546px) {
+    .the_team_img{
+      max-width: 92.4px;
+      max-height: 133.4px;
+    }
+    .steps_cards{
+      padding-top: 12px;
+    }
+    .testim_title{
+      padding-top: 29px;
+    }
+    .step_description{
+      padding-top: 20px;
+      padding-left: 20px;
+    }
+    .testi_desc{
+      font-size: 14px;
+    }
+    .header_item{
+      display:none;
+    }
+    .header_burger{
+      display: block;
+      width: 30px;
+      height: 32px;
+      position: relative;
+    }
+    .burger_line{
+      display: block;
+      width: 26.25px;
+      height: 2.67px;
+      background-color: #C7AA8B;
+      position: absolute;
+      left: 0;
+      border-radius: 2px;
+    }
+    .burger_line_first{
+      top: 8px;
+    }
+    .burger_line_second {
+      top: 14.67px;
+    }
+    .burger_line_third{
+      bottom: 8px;
+    }
+}
+@media screen and (max-width:418px) {
+    .footer_button{
+      display: none;
+    }
 }
